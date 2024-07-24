@@ -15,7 +15,7 @@ app.use(
 const test = require("./api/route/auth.route");
 app.use("/auth",test)
 app.get("/", async (req, res) => {
-  res.json("server is running");
+  res.json("server is running succefully");
 });
 
 app.listen(PORT, async () => {
