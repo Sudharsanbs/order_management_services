@@ -12,8 +12,9 @@ app.use(
     origin: "*",
   })
 );
-const test = require("./api/route/auth.route");
-app.use("/auth",test)
+// const test = require("./api/route/auth.route");
+const authRouter = require("./api/route/auth.route");
+app.use("/auth",authRouter);
 app.get("/", async (req, res) => {
   res.json("server is running succefully");
 });
